@@ -1,0 +1,56 @@
+body {
+  font-family: "Netflix Sans", Helvetica, Arial, sans-serif;
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+  margin: 1rem;
+}
+
+.logo {
+  margin: 1rem 1rem -2rem 1rem;
+  padding: 0 0 2rem 0;
+  width: 180px;
+  height: 70px;
+}
+
+.mylist {
+  margin: 1rem 0 0 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+/* li {
+  display: inline;
+  margin: 2rem;
+  left: -1rem;
+} */
+/* 
+li > div {
+  display: inline-block;
+} */
+
+.movie {
+  position: relative;
+  height: 14rem;
+  display: table;
+  width: auto;
+  text-align: center;
+  font-style: italic;
+}
+.movie:hover > div > button {
+  cursor: pointer;
+  display: inline;
+}
+
+button {
+  display: none;
+  position: relative;
+  /* bottom: 100%; */
+  /* left: 50%; */
+  width: 50%;
+  height: 25px;
+  font-size: 14px;
+  background-color: white;
+  color: #000;
+}
