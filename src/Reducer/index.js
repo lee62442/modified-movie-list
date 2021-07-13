@@ -22,21 +22,13 @@ const listReducer = (state = State, action) => {
           (movie) => movie.id !== add_id
         ),
         mylist: [...state.mylist, ...add_obj]
-
-        // ...state,
-        // mylist: [...state.mylist, state.recommendations[action.id]],
-        // recommendations: [
-        //   ...state.recommendations.slice(0, action.id),
-        //   ...state.recommendations.slice(action.id + 1)]
       };
     case "REMOVE":
       const remove_id = action.id;
       const remove_obj = state.mylist.filter((movie) => movie.id === remove_id);
       return {
         ...state,
-        // mylist: [...state.mylist.slice(0, action.id), ...state.mylist.slice(action.id + 1)],
         mylist: state.mylist.filter((movie) => movie.id !== remove_id),
-        // recommendations: [...state.recommendations, state.mylist[action.id]]
         recommendations: [...state.recommendations, ...remove_obj]
       };
     default:
