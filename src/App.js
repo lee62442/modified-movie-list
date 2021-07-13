@@ -23,18 +23,6 @@ class App extends Component {
       <div>
         <img className="logo" src={logo} alt="Netflix Logo" />
         <h2 className="mylist">My List</h2>
-        {/* <ul>
-          {this.props.mylist.map((movie, i) => {
-            return (
-              <li className="movie" key={movie.id}>
-                <div>
-                  <MovieList movieItem={movie} />
-                  <button onClick={() => this.remove(i)}>REMOVE</button>
-                </div>
-              </li>
-            );
-          })}
-        </ul> */}
         <MovieList
           list={this.props.mylist}
           handleClick={this.remove}
@@ -42,18 +30,6 @@ class App extends Component {
         />
 
         <h2 className="mylist">My Recommendations</h2>
-        {/* <ul>
-          {this.props.recommendations.map((movie, i) => {
-            return (
-              <li className="Movie" key={movie.id}>
-                <div>
-                  <MovieList movieItem={movie} />
-                  <button onClick={() => this.add(i)}>ADD</button>
-                </div>
-              </li>
-            );
-          })}
-        </ul> */}
         <MovieList
           list={this.props.recommendations}
           handleClick={this.add}
