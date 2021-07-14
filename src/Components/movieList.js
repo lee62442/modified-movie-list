@@ -1,7 +1,17 @@
 import React from "react";
 
 const MovieList = (props) => {
-  return (
+  return props.eventType === "title" ? (
+    <div className="mylist">
+      {props.list.map((movie) => {
+        return (
+          <a key={movie.id} href="#" className="mylist-link movie">
+            {movie.title}
+          </a>
+        );
+      })}
+    </div>
+  ) : (
     <div className="mylist">
       {props.list.map((movie) => {
         return (

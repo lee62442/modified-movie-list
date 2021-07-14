@@ -20,16 +20,6 @@ body {
   justify-content: flex-start;
 }
 
-/* li {
-  display: inline;
-  margin: 2rem;
-  left: -1rem;
-} */
-/* 
-li > div {
-  display: inline-block;
-} */
-
 .movie {
   position: relative;
   height: 14rem;
@@ -43,11 +33,15 @@ li > div {
   display: inline;
 }
 
+.mylist-link {
+  padding: 1rem;
+  font-style: italic;
+  font-size: 20px;
+}
+
 button {
   display: none;
   position: relative;
-  /* bottom: 100%; */
-  /* left: 50%; */
   width: 50%;
   height: 25px;
   font-size: 14px;

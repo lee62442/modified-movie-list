@@ -35,6 +35,13 @@ class App extends Component {
           handleClick={this.add}
           eventType={"add"}
         />
+
+        <h2 className="mylist">My List</h2>
+        <MovieList
+          list={this.props.mylist}
+          handleClick={this.remove}
+          eventType={"title"}
+        />
       </div>
     );
   }

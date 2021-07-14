@@ -3,21 +3,21 @@ import axios from "axios";
 export function fetch(response) {
   return {
     type: "FETCH",
-    data: response.data,
+    data: response.data
   };
 }
 
 export function add(id) {
   return {
     type: "ADD",
-    id: id,
+    id: id
   };
 }
 
 export function remove(id) {
   return {
     type: "REMOVE",
-    id: id,
+    id: id
   };
 }
 
