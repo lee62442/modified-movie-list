@@ -14,23 +14,27 @@ body {
 }
 
 .mylist {
-  margin: 1rem 0 0 2rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
+  margin: 0 3rem;
 }
 
 .movie {
-  position: relative;
-  height: 14rem;
   display: table;
   width: auto;
   text-align: center;
   font-style: italic;
+  font-size: 1rem;
 }
+
+.movie-div {
+  display: table-caption;
+}
+
 .movie:hover > div > button {
-  cursor: pointer;
-  display: inline;
+  visibility: visible;
+  opacity: 1;
 }
 
 .mylist-link {
@@ -40,11 +44,16 @@ body {
 }
 
 button {
-  display: none;
-  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  border: 1px solid white;
   width: 50%;
-  height: 25px;
   font-size: 14px;
   background-color: white;
   color: #000;
+  position: relative;
+  top: 2px;
+  font-weight: 700;
+  transition: visibility 0.1s, opacity 0.1s linear;
 }

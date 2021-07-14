@@ -36,7 +36,7 @@ class App extends Component {
           eventType={"add"}
         />
 
-        <h2 className="mylist">My List</h2>
+        <h2 className="mylist">My List Title</h2>
         <MovieList
           list={this.props.mylist}
           handleClick={this.remove}

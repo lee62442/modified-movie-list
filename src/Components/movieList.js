@@ -17,7 +17,7 @@ const MovieList = (props) => {
         return (
           <ul>
             <li className="movie" key={movie.id}>
-              <div>
+              <div className="movie-div">
                 <h2>{movie.title}</h2>
                 <img src={movie.img} alt={movie.title} />
                 <button onClick={() => props.handleClick(movie.id)}>
